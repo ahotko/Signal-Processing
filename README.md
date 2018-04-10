@@ -2,5 +2,5 @@
 C# Signal Processing Library
 
 ## Dependencies
-* ahotko/MathExtended.ComplexNumbers
-* ahotko/MathExtended.Matrix
+* https://github.com/ahotko/MathExtended.ComplexNumbers
+* https://github.com/ahotko/MathExtended.Matrix
