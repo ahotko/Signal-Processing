@@ -7,8 +7,8 @@
     <ProjectGuid>{98411EE9-B318-4809-84B1-C325474568A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Signal_Processing</RootNamespace>
-    <AssemblyName>Signal Processing</AssemblyName>
+    <RootNamespace>Data.Annex.Signal.Processing</RootNamespace>
+    <AssemblyName>SignalProcessing</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

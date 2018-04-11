@@ -50,5 +50,23 @@ namespace SignalProcessingTest
 
             CollectionAssert.AreEqual(_trueValues, _transformedSignal, "Discrete Fourier Transform of Input signal Invalid!");
         }
+
+        [TestMethod]
+        public void SignalFastFourier()
+        {
+            var _signal = new Signal(4);
+            _signal[0] = 1.0;
+            _signal[1] = 2.0;
+            _signal[2] = 2.0;
+            _signal[3] = 1.0;
+            var _transformedSignal = _signal.FastFourierTransform();
+            var _trueValues = new Complex[4] {
+            new Complex(6, 0),
+            new Complex(-1, -1),
+            new Complex(0, 0),
+            new Complex(-1, 1)};
+
+            CollectionAssert.AreEqual(_trueValues, _transformedSignal, "Fast Fourier Transform of Input signal Invalid!");
+        }
     }
 }
