@@ -50,6 +50,7 @@
     <Compile Include="Signal.Processing.cs" />
     <Compile Include="Signal.Processing.Fourier.cs" />
     <Compile Include="Signal.Processing.Generators.cs" />
+    <Compile Include="Signal.Processing.Math.cs" />
     <Compile Include="Signal.Processing.Smoothing.cs" />
     <Compile Include="Signal.Processing.WindowFunctions.cs" />
   </ItemGroup>

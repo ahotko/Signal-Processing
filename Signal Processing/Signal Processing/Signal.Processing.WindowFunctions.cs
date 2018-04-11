@@ -1,5 +1,4 @@
-﻿using Data.Annex.MathExtended.Functions;
-using System;
+﻿using System;
 
 namespace Data.Annex.Signal.Processing
 {
@@ -34,8 +33,6 @@ namespace Data.Annex.Signal.Processing
             {
                 throw new ArgumentOutOfRangeException("Width of Window function should be at least 2 samples.");
             }
-
-            var _functions = new Functions();
 
             for (int n = 0; n < _width; n++)
             {
@@ -86,7 +83,7 @@ namespace Data.Annex.Signal.Processing
                         double _alpha = (parameter == 0.0) ? 3.0 : parameter;
                         double _piAlpha = Math.PI * _alpha;
                         double _bCoeff = Math.Sqrt(1.0 - Math.Pow((2.0 * n / (_width - 1.0)) - 1.0, 2));
-                        _value = _functions.I0(_piAlpha * _bCoeff) / _functions.I0(_piAlpha);
+                        _value = AdditionalMathFunctions.BesselI0(_piAlpha * _bCoeff) / AdditionalMathFunctions.BesselI0(_piAlpha);
                         break;
                     case WindowFunction.Nuttall:
                         _value = 0.355768 -
@@ -115,7 +112,7 @@ namespace Data.Annex.Signal.Processing
                         _value = Math.Exp(-_coeffP);
                         break;
                     case WindowFunction.Lanczos:
-                        _value = _functions.Sinc(2.0 * n / (_width - 1) - 1.0);
+                        _value = AdditionalMathFunctions.Sinc(2.0 * n / (_width - 1) - 1.0);
                         break;
                     default:
                         _value = 0.0;
