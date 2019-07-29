@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Data.Annex.MathExtended.ComplexNumbers;
 using Data.Annex.Signal.Processing;
-using Data.Annex.MathExtended.ComplexNumbers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SignalProcessingTest

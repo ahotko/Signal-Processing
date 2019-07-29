@@ -30,12 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MathExtended.ComplexNumbers">
-      <HintPath>..\..\..\L18-005 - MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\bin\Debug\MathExtended.ComplexNumbers.dll</HintPath>
-    </Reference>
-    <Reference Include="MathExtended.Matrix">
-      <HintPath>..\..\..\L18-003 - MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix\bin\Debug\MathExtended.Matrix.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +47,16 @@
     <Compile Include="Signal.Processing.Math.cs" />
     <Compile Include="Signal.Processing.Smoothing.cs" />
     <Compile Include="Signal.Processing.WindowFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\External Libraries\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers.csproj">
+      <Project>{7cea513a-afeb-4389-b805-56df6c3375dd}</Project>
+      <Name>MathExtended.ComplexNumbers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\External Libraries\MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix.csproj">
+      <Project>{9bb05720-3768-46ac-8dd8-a97b67f7b9f1}</Project>
+      <Name>MathExtended.Matrix</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

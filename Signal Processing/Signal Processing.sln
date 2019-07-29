@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal Processing", "Signal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal.ProcessingTest", "Signal.ProcessingTest\Signal.ProcessingTest.csproj", "{9E358FBF-4BEA-4EF9-85A8-2F1ED337205A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathExtended.ComplexNumbers", "..\External Libraries\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers.csproj", "{7CEA513A-AFEB-4389-B805-56DF6C3375DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathExtended.Matrix", "..\External Libraries\MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix.csproj", "{9BB05720-3768-46AC-8DD8-A97B67F7B9F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9E358FBF-4BEA-4EF9-85A8-2F1ED337205A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E358FBF-4BEA-4EF9-85A8-2F1ED337205A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E358FBF-4BEA-4EF9-85A8-2F1ED337205A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEA513A-AFEB-4389-B805-56DF6C3375DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEA513A-AFEB-4389-B805-56DF6C3375DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEA513A-AFEB-4389-B805-56DF6C3375DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEA513A-AFEB-4389-B805-56DF6C3375DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB05720-3768-46AC-8DD8-A97B67F7B9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB05720-3768-46AC-8DD8-A97B67F7B9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB05720-3768-46AC-8DD8-A97B67F7B9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB05720-3768-46AC-8DD8-A97B67F7B9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+[submodule "External Libraries/MathExtended.Matrix"]
+	path = External Libraries/MathExtended.Matrix
+	url = https://github.com/ahotko/MathExtended.Matrix
+[submodule "External Libraries/MathExtended.ComplexNumbers"]
+	path = External Libraries/MathExtended.ComplexNumbers
+	url = https://github.com/ahotko/MathExtended.ComplexNumbers.git
