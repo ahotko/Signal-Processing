@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal Processing", "Signal Processing\Signal Processing.csproj", "{98411EE9-B318-4809-84B1-C325474568A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal.ProcessingTest", "Signal.ProcessingTest\Signal.ProcessingTest.csproj", "{9E358FBF-4BEA-4EF9-85A8-2F1ED337205A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9BB05720-3768-46AC-8DD8-A97B67F7B9F1} = {9BB05720-3768-46AC-8DD8-A97B67F7B9F1}
+		{7CEA513A-AFEB-4389-B805-56DF6C3375DD} = {7CEA513A-AFEB-4389-B805-56DF6C3375DD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathExtended.ComplexNumbers", "..\External Libraries\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers.csproj", "{7CEA513A-AFEB-4389-B805-56DF6C3375DD}"
 EndProject

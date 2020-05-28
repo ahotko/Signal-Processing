@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MathExtended.ComplexNumbers">
-      <HintPath>..\..\..\L18-005 - MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\bin\Debug\MathExtended.ComplexNumbers.dll</HintPath>
+      <HintPath>..\..\External Libraries\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\MathExtended.ComplexNumbers\bin\Debug\MathExtended.ComplexNumbers.dll</HintPath>
     </Reference>
     <Reference Include="MathExtended.Matrix">
       <HintPath>..\..\..\L18-003 - MathExtended.Matrix\MathExtended.Matrix\MathExtended.Matrix\bin\Debug\MathExtended.Matrix.dll</HintPath>
@@ -54,7 +54,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTestSignal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

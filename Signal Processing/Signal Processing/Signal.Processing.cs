@@ -80,8 +80,8 @@ namespace Data.Annex.Signal.Processing
         {
             get
             {
-                double _lenLog = Math.Log(_samples.Length, 2);
-                return (_lenLog == Math.Floor(_lenLog));
+                uint length = (uint)_samples.Length;
+                return (length == 1) || ((length & (length - 1)) == 0);
             }
         }
 

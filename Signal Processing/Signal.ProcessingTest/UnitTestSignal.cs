@@ -13,7 +13,21 @@ namespace SignalProcessingTest
             var a = new Signal(100);
             a.ResizeToNextPowerOfTwo();
 
-            Assert.AreEqual(a.Count, 128, "Signal length not correct!");
+            Assert.AreEqual(128, a.Count, "Signal length not correct!");
+        }
+
+        [TestMethod]
+        public void SignalLengthIsPowerOfTwo()
+        {
+            var a = new Signal(100);
+            var b = new Signal(128);
+            var c = new Signal(150);
+            var d = new Signal(1024);
+
+            Assert.IsFalse(a.IsLengthPowerOfTwo, "Signal length not power of two!");
+            Assert.IsTrue(b.IsLengthPowerOfTwo, "Signal length is power of two!");
+            Assert.IsFalse(c.IsLengthPowerOfTwo, "Signal length not power of two!");
+            Assert.IsTrue(d.IsLengthPowerOfTwo, "Signal length is power of two!");
         }
 
         [TestMethod]
@@ -27,9 +41,9 @@ namespace SignalProcessingTest
             b.ResizeToNearestPowerOfTwo();
             c.ResizeToNearestPowerOfTwo();
 
-            Assert.AreEqual(a.Count, 64, "Signal A length not correct!");
-            Assert.AreEqual(b.Count, 256, "Signal B length not correct!");
-            Assert.AreEqual(c.Count, 128, "Signal C length not correct!");
+            Assert.AreEqual(64, a.Count, "Signal A length not correct!");
+            Assert.AreEqual(256, b.Count, "Signal B length not correct!");
+            Assert.AreEqual(128, c.Count, "Signal C length not correct!");
         }
 
         [TestMethod]
